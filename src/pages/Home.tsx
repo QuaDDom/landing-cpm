@@ -11,8 +11,8 @@ export default function Home() {
   return (
     <div className="containerAll" style={{}}>
       <head>{CssBaseline.flush()}</head>
-      <Nav />
-      <div className="content">
+      <div className="content" style={{ padding: "0px 150px" }}>
+        <Nav />
         <Intro />
         <About />
       </div>
