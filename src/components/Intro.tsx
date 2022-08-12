@@ -6,11 +6,11 @@ export default function Intro() {
   return (
     <div className="intro">
       <div className="aboutWe">
-        <Text size={90} h1 weight={"bold"}>
+        <Text size={85} h1 weight={"bold"}>
           Transmitting
         </Text>
         <Text
-          size={90}
+          size={85}
           h1
           weight={"bold"}
           css={{

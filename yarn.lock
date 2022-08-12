@@ -10121,6 +10121,11 @@
   "resolved" "https://registry.npmjs.org/text-table/-/text-table-0.2.0.tgz"
   "version" "0.2.0"
 
+"three-js@^79.0.0":
+  "integrity" "sha512-/jBULzQlazCXEh1OXFRg9gTcKcPvYYGkEC7ebCJGf4zBS3uHTO7KH3hKFtgYrT0m8jizce5Ews/2jkkmt5xBmw=="
+  "resolved" "https://registry.npmjs.org/three-js/-/three-js-79.0.0.tgz"
+  "version" "79.0.0"
+
 "throat@^6.0.1":
   "integrity" "sha512-8hmiGIJMDlwjg7dlJ4yKGLK8EsYqKgPWbG3b4wjJddKNwc7N7Dpn08Df4szr/sZdMVeOstrdYSsqzX6BYbcB+w=="
   "resolved" "https://registry.npmjs.org/throat/-/throat-6.0.1.tgz"
