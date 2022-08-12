@@ -9,4 +9,10 @@
     font-size: 2em;
     font-weight: 700;
   }
+  .separator {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 270px;
+  }
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import { Button, Text } from "@nextui-org/react";
 import { Switch, useTheme } from "@nextui-org/react";
+import { useTheme as useNextTheme } from "next-themes";
 import "./Nav.scss";
 
 export default function Nav() {
@@ -12,7 +13,6 @@ export default function Nav() {
       <Text
         className="text"
         css={{
-          color: "$black",
           fontSize: "$sm",
           padding: "$2 $4",
         }}
@@ -20,8 +20,7 @@ export default function Nav() {
         CPM
       </Text>
       <div className="list"></div>
-
-      <div>
+      <div className="separator">
         <Switch
           checked={isDark}
           onChange={(e) => setTheme(e.target.checked ? "dark" : "light")}
@@ -30,7 +29,4 @@ export default function Nav() {
       </div>
     </div>
   );
-}
-function useNextTheme(): { setTheme: any } {
-  throw new Error("Function not implemented.");
 }

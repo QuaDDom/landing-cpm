@@ -1,30 +1,39 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import Nav from "./components/Nav";
-import Home from "./pages/Home";
 import { createTheme, NextUIProvider } from "@nextui-org/react";
+import Home from "./pages/Home";
 import { ThemeProvider as NextThemesProvider } from "next-themes";
-
-// 2. Call `createTheme` and pass your custom values
-const lightTheme = createTheme({
-  type: "light",
-  theme: {
-    colors: {},
-  },
-});
 
 const darkTheme = createTheme({
   type: "dark",
   theme: {
-    colors: {},
+    colors: {
+      background: "#1d1d1d",
+      text: "#fff",
+      myDarkColor: "#ff4ecd",
+    },
+    space: {},
+    fonts: {},
+  },
+});
+
+const lightTheme = createTheme({
+  type: "light",
+  theme: {
+    colors: {
+      background: "#FFF",
+      text: "#000",
+      primaryColor: "#ff4ecd",
+    }, // optional
   },
 });
 
 function App() {
   return (
     <NextThemesProvider
-      defaultTheme="light"
+      defaultTheme={lightTheme}
+      attribute="class"
       value={{
         light: lightTheme.className,
         dark: darkTheme.className,
