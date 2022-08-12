@@ -14,7 +14,7 @@ const darkTheme = createTheme({
       primaryLightHover: "$blue300",
       primaryLightActive: "$blue400",
       primaryLightContrast: "$blue600",
-      primary: "$blue600",
+      primary: "#52bbfc",
       primaryBorder: "$blue600",
       primaryBorderHover: "$blue700",
       primarySolidHover: "$blue800",

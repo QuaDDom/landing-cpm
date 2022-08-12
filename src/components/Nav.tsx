@@ -11,7 +11,7 @@ export default function Nav() {
   const { isDark, type } = useTheme();
 
   return (
-    <>
+    <div className="navContainer">
       <div className="nav">
         <Text
           className="text"
@@ -28,10 +28,15 @@ export default function Nav() {
             checked={isDark}
             onChange={(e) => setTheme(e.target.checked ? "dark" : "light")}
           />
-          <Button onClick={() => setVisible(true)}>Contactanos!</Button>
+          <Button
+            onClick={() => setVisible(true)}
+            css={{ color: "$background", fontWeight: "bold" }}
+          >
+            Contactanos!
+          </Button>
         </div>
       </div>
       <ContactModal bindings={bindings} setVisible={setVisible} />
-    </>
+    </div>
   );
 }

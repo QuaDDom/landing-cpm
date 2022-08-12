@@ -1,0 +1,10 @@
+.scene {
+  position: relative;
+  width: 700px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  pointer-events: none;
+}
