@@ -12,6 +12,7 @@ const darkTheme = createTheme({
       background: "#1d1d1d",
       text: "#fff",
       myDarkColor: "#ff4ecd",
+      grey: "#2a333e",
     },
     space: {},
     fonts: {},
@@ -25,24 +26,27 @@ const lightTheme = createTheme({
       background: "#FFF",
       text: "#000",
       primaryColor: "#ff4ecd",
+      grey: "#97b2c8",
     }, // optional
   },
 });
 
 function App() {
   return (
-    <NextThemesProvider
-      defaultTheme={lightTheme}
-      attribute="class"
-      value={{
-        light: lightTheme.className,
-        dark: darkTheme.className,
-      }}
-    >
-      <NextUIProvider>
-        <Home />
-      </NextUIProvider>
-    </NextThemesProvider>
+    <>
+      <NextThemesProvider
+        defaultTheme={lightTheme}
+        attribute="class"
+        value={{
+          light: lightTheme.className,
+          dark: darkTheme.className,
+        }}
+      >
+        <NextUIProvider>
+          <Home />
+        </NextUIProvider>
+      </NextThemesProvider>
+    </>
   );
 }
 
