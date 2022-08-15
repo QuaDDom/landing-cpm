@@ -8,25 +8,37 @@ import { DonutCursorProvider, DonutConsumer } from "react-donut-cursor";
 import SectorSeparator from "../components/SectorSeparator";
 import Stories from "../components/Stories";
 import "./Home.scss";
+import { Cursor } from "react-creative-cursor";
 
 export default function Home() {
-  const { theme } = useTheme();
+  const { theme, isDark } = useTheme();
 
   return (
-    <div className="containerAll" style={{}}>
-      <div
-        id="content"
-        style={{ padding: "0px 200px", scrollBehavior: "smooth" }}
-      >
-        <Nav />
-        <Intro />
-        <SectorSeparator words={["Elegance", "Fast", "Modern", "Effective"]} />
-        <About />
-        <SectorSeparator
-          words={["Efficient", "Trustworthy", "Ethical", "Imaginative"]}
-        />
-        <Stories />
+    <>
+      <Cursor
+        isGelly={true}
+        cursorBackgrounColor={isDark ? "#fff" : "#000"}
+        cursorInnerColor={"#1fc7ff"}
+        animationDuration={0.5}
+        sizeAnimationDuration={1.5}
+      />
+      <div className="containerAll" style={{}} data-cursor-exclusion>
+        <div
+          id="content"
+          style={{ padding: "0px 200px", scrollBehavior: "smooth" }}
+        >
+          <Nav />
+          <Intro />
+          <SectorSeparator
+            words={["Elegance", "Fast", "Modern", "Effective"]}
+          />
+          <About />
+          <SectorSeparator
+            words={["Efficient", "Trustworthy", "Ethical", "Imaginative"]}
+          />
+          <Stories />
+        </div>
       </div>
-    </div>
+    </>
   );
 }

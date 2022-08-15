@@ -20,16 +20,6 @@ export default function SectorSeparator({ words }: Props) {
                 letterSpacing: "5px",
               }}
             >
-              ELEGANCE
-            </Text>
-            <Text
-              size={90}
-              css={{
-                color: "$gray100",
-                fontWeight: "900",
-                letterSpacing: "5px",
-              }}
-            >
               FAST
             </Text>
             <Text

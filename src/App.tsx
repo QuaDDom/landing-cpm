@@ -4,6 +4,8 @@ import Nav from "./components/Nav";
 import { createTheme, NextUIProvider } from "@nextui-org/react";
 import Home from "./pages/Home";
 import { ThemeProvider as NextThemesProvider } from "next-themes";
+import { Cursor } from "react-creative-cursor";
+import "react-creative-cursor/dist/styles.css";
 
 const darkTheme = createTheme({
   type: "dark",

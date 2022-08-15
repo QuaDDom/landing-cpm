@@ -14,6 +14,7 @@ export default function Nav() {
     <div className="navContainer">
       <div className="nav">
         <Text
+          data-cursor-size="100px"
           className="text"
           css={{
             fontSize: "$sm",
@@ -26,6 +27,7 @@ export default function Nav() {
         <div className="separator">
           <div className="sections">
             <Link
+              data-cursor-size="80px"
               className="sectionBtn"
               href="#intro"
               css={{ fontSize: "19px" }}
@@ -33,6 +35,7 @@ export default function Nav() {
               Home
             </Link>
             <Link
+              data-cursor-size="80px"
               className="sectionBtn"
               href="#about"
               css={{ fontSize: "19px" }}
@@ -40,6 +43,7 @@ export default function Nav() {
               About
             </Link>
             <Link
+              data-cursor-size="80px"
               className="sectionBtn"
               href="#stories"
               css={{ fontSize: "19px" }}
@@ -48,10 +52,12 @@ export default function Nav() {
             </Link>
           </div>
           <Switch
+            data-cursor-size="80px"
             checked={isDark}
             onChange={(e) => setTheme(e.target.checked ? "dark" : "light")}
           />
           <Button
+            data-cursor-size="80px"
             onClick={() => setVisible(true)}
             css={{ color: "$background", fontWeight: "bold" }}
           >
