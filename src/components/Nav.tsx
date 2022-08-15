@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Modal, Text, useModal } from "@nextui-org/react";
+import { Button, Modal, Text, useModal, Link } from "@nextui-org/react";
 import { Switch, useTheme } from "@nextui-org/react";
 import { useTheme as useNextTheme } from "next-themes";
 import "./Nav.scss";
@@ -24,6 +24,29 @@ export default function Nav() {
         </Text>
         <div className="list"></div>
         <div className="separator">
+          <div className="sections">
+            <Link
+              className="sectionBtn"
+              href="#intro"
+              css={{ fontSize: "19px" }}
+            >
+              Home
+            </Link>
+            <Link
+              className="sectionBtn"
+              href="#about"
+              css={{ fontSize: "19px" }}
+            >
+              About
+            </Link>
+            <Link
+              className="sectionBtn"
+              href="#stories"
+              css={{ fontSize: "19px" }}
+            >
+              Stories
+            </Link>
+          </div>
           <Switch
             checked={isDark}
             onChange={(e) => setTheme(e.target.checked ? "dark" : "light")}

@@ -1,10 +1,10 @@
 import React from "react";
 import { Button, Text } from "@nextui-org/react";
-import "./About.scss";
+import "./Stories.scss";
 
-export default function About() {
+export default function Stories() {
   return (
-    <div id="about">
+    <div id="stories">
       <Text
         h2
         weight={"bold"}
@@ -13,7 +13,7 @@ export default function About() {
         }}
         size={60}
       >
-        About
+        Stories
       </Text>
     </div>
   );

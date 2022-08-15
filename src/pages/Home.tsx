@@ -6,17 +6,26 @@ import Intro from "../components/Intro";
 import About from "../components/About";
 import { DonutCursorProvider, DonutConsumer } from "react-donut-cursor";
 import SectorSeparator from "../components/SectorSeparator";
+import Stories from "../components/Stories";
+import "./Home.scss";
 
 export default function Home() {
   const { theme } = useTheme();
 
   return (
     <div className="containerAll" style={{}}>
-      <div className="content" style={{ padding: "0px 200px" }}>
+      <div
+        id="content"
+        style={{ padding: "0px 200px", scrollBehavior: "smooth" }}
+      >
         <Nav />
         <Intro />
-        <SectorSeparator words={["test", "test", "test", "test"]} />
+        <SectorSeparator words={["Elegance", "Fast", "Modern", "Effective"]} />
         <About />
+        <SectorSeparator
+          words={["Efficient", "Trustworthy", "Ethical", "Imaginative"]}
+        />
+        <Stories />
       </div>
     </div>
   );

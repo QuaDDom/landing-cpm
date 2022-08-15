@@ -1,19 +1,18 @@
 .scrollSeparator {
-  height: 20vh;
+  height: 10vh;
   width: 100%;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 100px;
-
+  margin-bottom: 200px;
   .wordsContainer {
     display: block;
-    width: 200%;
+    width: 215%;
     position: absolute;
     left: 0;
     right: 0;
-    animation: animation 5s linear infinite;
+    animation: animation 10s linear infinite;
     .word {
       display: flex;
       margin: 0 24.7px;
@@ -33,6 +32,6 @@
     left: 0;
   }
   100% {
-    left: -100%;
+    left: -105.25%;
   }
 }

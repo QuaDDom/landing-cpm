@@ -5,7 +5,7 @@ import Scene3D from "./Scene3D";
 
 export default function Intro() {
   return (
-    <div className="intro">
+    <div id="intro">
       <div className="aboutWe">
         <Text size={85} h1 weight={"bold"}>
           Transmitting

@@ -20,7 +20,7 @@ export default function SectorSeparator({ words }: Props) {
                 letterSpacing: "5px",
               }}
             >
-              HELLO •{" "}
+              ELEGANCE
             </Text>
             <Text
               size={90}
@@ -30,7 +30,7 @@ export default function SectorSeparator({ words }: Props) {
                 letterSpacing: "5px",
               }}
             >
-              HELLO •{" "}
+              FAST
             </Text>
             <Text
               size={90}
@@ -40,7 +40,7 @@ export default function SectorSeparator({ words }: Props) {
                 letterSpacing: "5px",
               }}
             >
-              HELLO •{" "}
+              MODERN
             </Text>
             <Text
               size={90}
@@ -50,7 +50,7 @@ export default function SectorSeparator({ words }: Props) {
                 letterSpacing: "5px",
               }}
             >
-              HELLO •{" "}
+              EFFECTIVE
             </Text>
           </div>
         </div>
@@ -64,7 +64,7 @@ export default function SectorSeparator({ words }: Props) {
                 letterSpacing: "5px",
               }}
             >
-              HELLO •{" "}
+              EFFICIENT
             </Text>
             <Text
               size={90}
@@ -74,7 +74,7 @@ export default function SectorSeparator({ words }: Props) {
                 letterSpacing: "5px",
               }}
             >
-              HELLO •{" "}
+              IMAGINATIVE
             </Text>
             <Text
               size={90}
@@ -84,7 +84,7 @@ export default function SectorSeparator({ words }: Props) {
                 letterSpacing: "5px",
               }}
             >
-              HELLO •{" "}
+              ETHICAL
             </Text>
             <Text
               size={90}
@@ -95,7 +95,7 @@ export default function SectorSeparator({ words }: Props) {
                 fontSize: 90,
               }}
             >
-              HELLO •{" "}
+              TRUST
             </Text>
           </div>
         </div>

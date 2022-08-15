@@ -24,6 +24,20 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-width: 270px;
+    min-width: 580px;
+    height: 100%;
+    .sections {
+      display: flex;
+      align-items: center;
+      padding-top: 5px;
+      width: 260px;
+      .sectionBtn {
+        cursor: pointer;
+        margin: 0 15px;
+        .sectionBtn:hover {
+          color: #52bbfc;
+        }
+      }
+    }
   }
 }
