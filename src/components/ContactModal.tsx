@@ -34,11 +34,11 @@ export default function ContactModal({ bindings, setVisible }: Props) {
       <Modal.Body>
         <Input
           bordered
-          placeholder="About"
+          placeholder="Tu nombre"
           type={"text"}
           css={{ backgroundColor: "$gray100" }}
         ></Input>
-        <Spacer y={0.5} />
+        <Spacer y={-0.4} />
         <Input
           bordered
           placeholder="Email"
@@ -46,6 +46,21 @@ export default function ContactModal({ bindings, setVisible }: Props) {
           color={"primary"}
           css={{ backgroundColor: "$gray100" }}
         ></Input>
+        <Spacer y={-0.4} />
+        <Input
+          bordered
+          placeholder="Cuentanos sobre tu proyecto"
+          type={"text"}
+          css={{ backgroundColor: "$gray100" }}
+        ></Input>
+        <Spacer y={-0.4} />
+        <Input
+          bordered
+          placeholder="Presupuesto del proyecto (USD)"
+          type={"number"}
+          css={{ backgroundColor: "$gray100" }}
+        ></Input>
+        <Spacer y={0.5} />
       </Modal.Body>
       <Modal.Footer>
         <Button auto flat color="error" onClick={() => setVisible(false)}>

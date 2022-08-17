@@ -23,7 +23,7 @@ export default function Projects() {
           data-cursor-color="#2f4048"
         >
           <img
-            src="https://picsum.photos/700/700"
+            src="https://i.imgur.com/6ACTo7M.png"
             alt=""
             className="projectImg"
           />
@@ -44,7 +44,7 @@ export default function Projects() {
           data-cursor-color="#2f4048"
         >
           <img
-            src="https://picsum.photos/700/700"
+            src="https://s3-alpha.figma.com/hub/file/2221646744/56b797f3-1d6a-4406-89a9-fb18898e43af-cover.png"
             alt=""
             className="projectImg"
           />
@@ -65,7 +65,7 @@ export default function Projects() {
           data-cursor-color="#2f4048"
         >
           <img
-            src="https://picsum.photos/700/700"
+            src="https://miro.medium.com/max/1400/1*u7ZIity24F4snYkCCtKIhw.png"
             alt=""
             className="projectImg"
           />
@@ -86,7 +86,7 @@ export default function Projects() {
           data-cursor-color="#2f4048"
         >
           <img
-            src="https://picsum.photos/700/700"
+            src="https://img.freepik.com/premium-vector/creative-business-powerpoint-presentation-slides-template-design-set_123633-630.jpg?w=2000"
             alt=""
             className="projectImg"
           />
