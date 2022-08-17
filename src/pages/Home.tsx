@@ -19,6 +19,7 @@ export default function Home() {
         isGelly={true}
         cursorBackgrounColor={isDark ? "#fff" : "#000"}
         cursorInnerColor={"#1fc7ff"}
+        cursorSize={25}
         animationDuration={0.5}
         sizeAnimationDuration={1.5}
       />

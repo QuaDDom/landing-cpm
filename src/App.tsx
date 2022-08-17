@@ -49,7 +49,7 @@ function App() {
   return (
     <>
       <NextThemesProvider
-        defaultTheme={lightTheme}
+        defaultTheme={darkTheme}
         attribute="class"
         value={{
           light: lightTheme.className,
