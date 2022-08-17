@@ -9,6 +9,7 @@ import SectorSeparator from "../components/SectorSeparator";
 import Projects from "../components/Projects";
 import "./Home.scss";
 import { Cursor } from "react-creative-cursor";
+import { ScrollerMotion } from "scroller-motion";
 
 export default function Home() {
   const { theme, isDark } = useTheme();
@@ -23,23 +24,25 @@ export default function Home() {
         animationDuration={0.5}
         sizeAnimationDuration={1.5}
       />
-      <div className="containerAll" style={{}} data-cursor-exclusion>
-        <div
-          id="content"
-          style={{ padding: "0px 200px", scrollBehavior: "smooth" }}
-        >
-          <Nav />
-          <Intro />
-          <SectorSeparator
-            words={["Elegance", "Fast", "Modern", "Effective"]}
-          />
-          <About />
-          <SectorSeparator
-            words={["Efficient", "Trustworthy", "Ethical", "Imaginative"]}
-          />
-          <Projects />
+      <ScrollerMotion>
+        <div className="containerAll" style={{}} data-cursor-exclusion>
+          <div
+            id="content"
+            style={{ padding: "0px 200px", scrollBehavior: "smooth" }}
+          >
+            <Nav />
+            <Intro />
+            <SectorSeparator
+              words={["Elegance", "Fast", "Modern", "Effective"]}
+            />
+            <About />
+            <SectorSeparator
+              words={["Efficient", "Trustworthy", "Ethical", "Imaginative"]}
+            />
+            <Projects />
+          </div>
         </div>
-      </div>
+      </ScrollerMotion>
     </>
   );
 }
