@@ -6,7 +6,7 @@ import Intro from "../components/Intro";
 import About from "../components/About";
 import { DonutCursorProvider, DonutConsumer } from "react-donut-cursor";
 import SectorSeparator from "../components/SectorSeparator";
-import Stories from "../components/Stories";
+import Projects from "../components/Projects";
 import "./Home.scss";
 import { Cursor } from "react-creative-cursor";
 
@@ -18,7 +18,7 @@ export default function Home() {
       <Cursor
         isGelly={true}
         cursorBackgrounColor={isDark ? "#fff" : "#000"}
-        cursorInnerColor={"#1fc7ff"}
+        cursorInnerColor={"#ffffff"}
         cursorSize={25}
         animationDuration={0.5}
         sizeAnimationDuration={1.5}
@@ -37,7 +37,7 @@ export default function Home() {
           <SectorSeparator
             words={["Efficient", "Trustworthy", "Ethical", "Imaginative"]}
           />
-          <Stories />
+          <Projects />
         </div>
       </div>
     </>

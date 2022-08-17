@@ -45,10 +45,10 @@ export default function Nav() {
             <Link
               data-cursor-size="80px"
               className="sectionBtn"
-              href="#stories"
+              href="#projects"
               css={{ fontSize: "19px" }}
             >
-              Stories
+              Projects
             </Link>
           </div>
           <Switch
